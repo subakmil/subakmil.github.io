@@ -1,0 +1,42 @@
+html {
+    font-family: "Architects Daughter", cursive;
+}
+
+body {
+    margin: 5% 5%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.text {
+/*    padding: 0 5%; */
+    width: 55%;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+#my-image {
+    width: 45%;
+    min-width: 250px;
+    max-width: 505px;
+    height: auto;
+    border-radius: 10% 30% 50% 70%;
+    margin: auto;
+}
+
+nav img{
+    width: 8%;
+    min-width: 40px;
+    height: auto;
+    margin: 0 2%;
+}
