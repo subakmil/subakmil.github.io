@@ -336,6 +336,74 @@ h2 {
 
 /* SKILLS section */
 
+.it-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.it-cont figure {
+    width: 220px;
+}
+
+.it-cont img {
+    width: 100px;
+    height: auto;
+    margin: 10px 20px;
+}
+
+.it-cont figcaption {
+    font-style: italic;
+}
+
+.skills-margin {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.lang .langu {
+    width: 64px;
+    height: auto;
+    margin: 10px 20px;
+}
+
+.lang figure {
+    width: 100px;
+    align-self: flex-end;
+}
+
+.lang {
+    margin-bottom: 3.5em;
+}
+
+#strengths, #interests {
+    width: 50%;
+}
+
+#strengths {
+    text-align: right;
+}
+
+#strengths h2 {
+    margin-right: 1.5em;
+}
+
+#strengths li {
+    text-align: right;
+    direction: rtl;
+    margin: 0 1em;
+}
+
+#interests h2 {
+    text-align: left;
+    margin-left: 1.5em;
+}
+
+#interests li {
+    margin: 0 1em;
+}
+
 #skills-container {
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(2, 1fr);
@@ -385,6 +453,7 @@ h2 {
 
 }
 
+
 #personal-char h2 {
     margin-bottom: 0.5em;
 }
@@ -393,9 +462,6 @@ h2 {
     text-align: left;
 }
 
-#strengths {
-    width: 100%;
-}
 
 #skills hr {
     margin-bottom: 2em;
