@@ -568,8 +568,8 @@ img {
         width: 100%;
     }
 
-    * {
-        overflow: hidden;
+    .short {
+        width: 150px;
     }
 }
 
