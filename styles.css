@@ -477,6 +477,41 @@ h2 {
     margin-top: 1em;
 }
 
+.project {
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#jammming .project-img {
+    width: 100%;
+}
+
+.project img, .project p {
+    position: static;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    border-radius: 5px;
+    
+}
+
+.no-underscore {
+    text-decoration: none !important;
+}
+
+#jammming p {
+    margin: 0;
+    color: black;
+    font-size: 1em;
+    /* font-family: "Saira Condensed"; */
+}
+
+.proj-section {
+    margin-bottom: 3.5em;
+}
+
 /* CONTACT section */
 
 img {
