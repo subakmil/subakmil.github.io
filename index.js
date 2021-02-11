@@ -1,3 +1,6 @@
+import { reactProjects } from "./data";
+
+// Age auto-update
 const ageCalculator = () => {
   const myBirthday = new Date("October 05, 92");
   const actualDate = new Date();
