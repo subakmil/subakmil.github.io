@@ -47,7 +47,7 @@ nav button {
 
 .nav_link {
   list-style: none;
-  min-width: 335px;
+  min-width: 320px;
 }
 
 nav {
@@ -613,4 +613,67 @@ img {
   .nav_link li a {
     font-size: 1em;
   }
+}
+
+.individual-project {
+  width: 320px;
+  margin: 5px;
+  background-color: white;
+  border: 1px solid rgb(101, 101, 101);
+  border-radius: 10px;
+  position: relative;
+}
+
+.individual-project h4 {
+  text-align: left;
+  padding: 10px 0 5px 10px;
+}
+
+#react-projects .individual-project p {
+  font-size: 0.85em;
+  padding: 5px;
+  padding-top: 10px;
+  margin: 0;
+}
+
+.individual-project a {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #df2926;
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 0.85em;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.grey {
+  color: grey;
+  font-size: 0.85em;
+}
+
+.certificate {
+  display: flex;
+  justify-content: center;
+  margin: 3em auto;
+  flex-wrap: wrap;
+}
+
+.certificate p {
+  font-size: 0.9em;
+}
+
+.certificate div {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.certificate img {
+  align-self: flex-start;
+  width: 56px;
+  height: 56px;
+  top: 0;
+  margin-bottom: 10px;
 }

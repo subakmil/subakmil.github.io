@@ -3,7 +3,7 @@ const reactProjects = [
   {
     name: "Jammming",
     description:
-      "Website that allows users to search the Spotify library, create a custom playlist and save it to their Spotify account.",
+      "Website app that allows users to search the Spotify library, create a custom playlist and save it to their Spotify account.",
     img: "./img/jammming.png",
     url: "https://thirsty-elion-d32e4e.netlify.app/",
   },
@@ -24,14 +24,14 @@ const reactProjects = [
   {
     name: "Tours",
     description:
-      "Website built in React that displays multiple tours recommendations. Based on John Smilga's tutorial.",
+      "Website that displays multiple tours recommendations. Based on John Smilga's tutorial.",
     img: "./img/tours.png",
     url: "https://tours-subakmil.netlify.app/",
   },
   {
     name: "Copycat",
     description:
-      "When users type into the textbox, a copy of the text will appear below the cat image, suggesting that the cat is being a copycat. Clicking on the image of the cat will toggle whether or not it is able to copy the user.",
+      "Simple app that copies the user input. Clicking on the image of the cat will toggle whether or not it is able to copy the user.",
     img: "./img/copycat.png",
     url: "https://copycat-subakmil.netlify.app/",
   },
@@ -65,12 +65,22 @@ document.getElementById("ageJs").innerHTML = ageCalculator();
 console.log(reactProjects);
 
 const listOfProjects = reactProjects.map((item) => {
-  return `<div>
+  return `<div class="individual-project">
+      <h4>${item.name}</h4>
       <a href=${item.url} target="_blank">
-        <img src=${item.img} alt=${item.name}/>
-        <p><strong>${item.name}</strong> ${item.description}</p>
+        Go to website &#8599;
       </a>
+      <p>${item.description}</p>
     </div>`;
 });
 
-document.getElementById("react-projects").innerHTML = listOfProjects;
+// const listOfProjects = reactProjects.map((item) => {
+//   return `<div class="individual-project">
+//       <a href=${item.url} target="_blank">
+//         <img src=${item.img} alt=${item.name}/>
+//         <p><strong>${item.name}: </strong>${item.description}</p>
+//       </a>
+//     </div>`;
+// });
+
+document.getElementById("react-projects").innerHTML = listOfProjects.join(" ");
