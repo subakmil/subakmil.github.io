@@ -1,4 +1,4 @@
-export const reactProjects = [
+const reactProjects = [
   {
     name: "Jammming",
     description:
