@@ -16,6 +16,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="/index.js" defer></script>
   </head>
   <body>
     <header>
@@ -31,7 +32,7 @@
           <li><a href="#skills" class="saira">Skills</a></li>
           <li><a href="#contact" class="saira">Contact</a></li>
         </ul>
-        <a class="pdf" href="./Subak_CV.pdf" download
+        <a class="pdf" href="./files/Subak_CV.pdf" download
           ><button class="saira" id="download">
             Download resume in PDF
           </button></a
@@ -53,7 +54,7 @@
             </div>
             <div class="container">
               <h3>Age</h3>
-              <p>28</p>
+              <p id="ageJs"></p>
             </div>
             <div class="container">
               <h3>Location</h3>
@@ -220,7 +221,8 @@
 
         <div class="school uniwidth">
           <h3>
-            CodeCademy learning platform | <span class="normal">ongoing</span>
+            CodeCademy, Udemy, FreeCodeCamp |
+            <span class="normal">ongoing</span>
           </h3>
           <h4><span class="normal">online</span></h4>
           <p>
@@ -248,13 +250,32 @@
             documentation for specific languages / frameworks / libraries.
           </p>
           <p class="wrk-details">
-            Some of my projects can be found in my GitHub account (<a
+            Most of my projects can be found in my GitHub account (<a
               href="https://github.com/subakmil"
               target="_blank"
               >subakmil</a
-            >), where can be also found source code for this website.
+            >) - some of them are also listed here, in the "Skills" section.
           </p>
         </div>
+
+        <hr class="uniwidth" />
+        <h2 class="uniwidth">~ CERTIFICATIONS ~</h2>
+
+        <div class="certificate uniwidth">
+          <img
+            src="https://media-exp1.licdn.com/dms/image/C560BAQH0VNXBrdkklA/company-logo_100_100/0/1593711193383?e=1620864000&v=beta&t=m9Lb9qeodGw4yVmYESHMMmS4kkb8dXdK-zVtBVo9S54"
+            alt="Udemy"
+          />
+          <div>
+            <h3>The Business Intelligence Analyst Course 2021</h3>
+            <p>Udemy</p>
+            <p>Issued Feb 2021</p>
+            <p class="grey">
+              Credential ID UC-b9749a4b-e3e0-4826-8d7b-6450bcb5312e
+            </p>
+          </div>
+        </div>
+
         <hr class="short" />
 
         <aside class="quote uniwidth">
@@ -292,7 +313,8 @@
 
         <h2 class="uniwidth skills-margin">Other IT skills</h2>
         <p class="uniwidth">
-          VBA, SQL, MS Office apps (advanced user of excel), Git Bash, VS Code
+          VBA, SQL, Tableau, MS Office apps (advanced user of excel), Git Bash,
+          VS Code
         </p>
 
         <h2 class="uniwidth skills-margin">Languages</h2>
@@ -324,45 +346,10 @@
         </div>
 
         <h2 class="uniwidth skills-margin">React Projects</h2>
-        <div class="uniwidth it-cont skills-margin proj-section">
-          <a
-            href="https://thirsty-elion-d32e4e.netlify.app/"
-            target="_blank"
-            class="no-underscore"
-          >
-            <div class="project" id="jammming">
-              <img
-                src="./img/jammming.png"
-                alt="Jammming project"
-                class="project-img"
-              />
-              <p>
-                <strong>Jammming</strong> is a website that allows users to
-                search the Spotify library, create a custom playlist and save it
-                to their Spotify account.
-              </p>
-            </div>
-          </a>
-
-          <a
-            href="https://stoic-yonath-e8d4fb.netlify.app/"
-            target="_blank"
-            class="no-underscore"
-          >
-            <div class="project" id="passing">
-              <img
-                src="./img/passing.png"
-                alt="Passing thoughts project"
-                class="project-img"
-              />
-              <p>
-                <strong>Passing Thoughts</strong> is a place for our passing
-                thoughts. Once you add a short thought, it’ll disappear after
-                just 15 seconds.
-              </p>
-            </div>
-          </a>
-        </div>
+        <div
+          id="react-projects"
+          class="uniwidth it-cont skills-margin proj-section"
+        ></div>
 
         <hr class="short uniwidth" />
         <h2 class="uniwidth per-char">~ PERSONAL CHARACTERICTICS ~</h2>
@@ -398,7 +385,7 @@
           StrengthsFinder) my TOP 5 strengths are following: connectedness,
           relator, learner, futuristic, intellection. Complete assessment of
           strengths and weaknesses can be found
-          <a href="./Miloš Šubák CS34 CZ.pdf" target="_blank">here</a>
+          <a href="./files/Miloš Šubák CS34 CZ.pdf" target="_blank">here</a>
           (assessment is in czech language).
         </p>
       </section>
