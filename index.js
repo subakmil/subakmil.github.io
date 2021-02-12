@@ -28,13 +28,6 @@ const reactProjects = [
     img: "./img/tours.png",
     url: "https://tours-subakmil.netlify.app/",
   },
-  {
-    name: "Copycat",
-    description:
-      "Simple app that copies the user input. Clicking on the image of the cat will toggle whether or not it is able to copy the user.",
-    img: "./img/copycat.png",
-    url: "https://copycat-subakmil.netlify.app/",
-  },
 ];
 
 // Age auto-update
