@@ -1,490 +1,446 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-            name="description"
-            content="Miloš Šubák - personal website. Website is structured in a form of a resume and describes skills, experience, education and personal characteristics."
-        />
-        <title>Miloš Šubák | Resume</title>
 
-        <link
-            rel="shortcut icon"
-            href="./img/favicon.ico"
-            type="image/x-icon"
-        />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Saira+Condensed:wght@200;400;700&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="./styles.css" />
-        <script type="module" src="/index.js" defer></script>
-    </head>
-    <body>
-        <header>
-            <a href="#profile" id="no-decor">
-                <h1 id="headline">
-                    <span class="saira narrow size">milos</span
-                    ><span class="bold saira size">subak</span
-                    ><span class="saira narrow size"> | resume</span>
-                </h1>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Miloš Šubák - personal website. Website is structured in a form of a resume and describes skills, experience, education and personal characteristics." />
+    <title>Miloš Šubák | Resume</title>
+
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Saira+Condensed:wght@200;400;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="/index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a href="#profile" id="no-decor">
+            <h1 id="headline">
+                <span class="saira narrow size">milos</span><span class="bold saira size">subak</span><span
+                    class="saira narrow size"> | resume</span>
+            </h1>
+        </a>
+        <nav>
+            <ul class="nav_link">
+                <li><a href="#profile" class="saira">Profile</a></li>
+                <li><a href="#experience" class="saira">Experience</a></li>
+                <li><a href="#skills" class="saira">Skills</a></li>
+                <li><a href="#contact" class="saira">Contact</a></li>
+            </ul>
+            <a class="pdf" href="./files/Subak_CV.pdf"><button class="saira" id="download">
+                    Download resume in PDF
+                </button>
             </a>
-            <nav>
-                <ul class="nav_link">
-                    <li><a href="#profile" class="saira">Profile</a></li>
-                    <li><a href="#experience" class="saira">Experience</a></li>
-                    <li><a href="#skills" class="saira">Skills</a></li>
-                    <li><a href="#contact" class="saira">Contact</a></li>
-                </ul>
-                <a class="pdf" href="./files/Subak_CV.pdf"
-                    ><button class="saira" id="download">
-                        Download resume in PDF
-                    </button></a
-                >
-            </nav>
-        </header>
+        </nav>
+    </header>
 
-        <!-- PROFILE section -->
-        <main>
-            <section id="profile" class="anchor">
-                <h1 class="uniwidth">Profile</h1>
-                <div id="profile-container" class="uniwidth">
-                    <img
-                        src="./img/my_photo.jpg"
-                        alt="my photo"
-                        id="profile-picture"
-                    />
+    <!-- PROFILE section -->
+    <main>
+        <section id="profile" class="anchor">
+            <h1 class="uniwidth">Profile</h1>
+            <div id="profile-container" class="uniwidth">
+                <img src="./img/my_photo.jpg" alt="my photo" id="profile-picture" />
 
-                    <div id="prof-con-details">
-                        <div class="container">
-                            <h3>Name</h3>
-                            <p>Miloš Šubák</p>
-                        </div>
-                        <div class="container">
-                            <h3>Age</h3>
-                            <p id="ageJs"></p>
-                        </div>
-                        <div class="container">
-                            <h3>Location</h3>
-                            <p>Prague, Czech Republic</p>
-                        </div>
-                        <div class="container">
-                            <h3>Birthplace</h3>
-                            <p>Michalovce, Slovakia</p>
-                        </div>
-                        <div class="container">
-                            <h3>Mobile</h3>
-                            <p>+420 792 226 442</p>
-                        </div>
-                        <div class="container">
-                            <h3>E-mail</h3>
-                            <p>subakmil@gmail.com</p>
-                        </div>
+                <div id="prof-con-details">
+                    <div class="container">
+                        <h3>Name</h3>
+                        <p>Miloš Šubák</p>
                     </div>
-
-                    <div class="about-text">
-                        <h3>About Me</h3>
-                        <p>
-                            Hi there! I consider myself a life enthusiast and a
-                            lifetime learner. I studied economics, but my career
-                            is increasingly being shifted towards IT,
-                            automation, web development and data analysis. And I
-                            am glad it is. I love to be on track with modern
-                            technologies and learning how to automate stuff that
-                            can be automated. I appreciate genuine relationships
-                            and honest intentions. Besides my passion for new
-                            technologies I love nature, sport, family, books,
-                            good people, intelligent humour and more! In case
-                            you would like to know more, feel free to contact
-                            me.
-                        </p>
+                    <div class="container">
+                        <h3>Age</h3>
+                        <p id="ageJs"></p>
                     </div>
-
-                    <div class="about-text">
-                        <h3>About this website</h3>
-                        <p>
-                            This website serves as my online resume and a practise for my web development skills. In case you
-                            would like to download it's PDF one-pager version,
-                            just click on the download button at the very top of
-                            the page (in navigation bar). Website is hosted on
-                            GitHub and source code can be found on my
-                            <a
-                                href="https://github.com/subakmil"
-                                target="_blank"
-                                >GitHub profile</a
-                            >.
-                        </p>
+                    <div class="container">
+                        <h3>Location</h3>
+                        <p>Prague, Czech Republic</p>
+                    </div>
+                    <div class="container">
+                        <h3>Birthplace</h3>
+                        <p>Michalovce, Slovakia</p>
+                    </div>
+                    <div class="container">
+                        <h3>Mobile</h3>
+                        <p>+420 792 226 442</p>
+                    </div>
+                    <div class="container">
+                        <h3>E-mail</h3>
+                        <p>subakmil@gmail.com</p>
                     </div>
                 </div>
-            </section>
 
-            <!-- EXPERIENCE section -->
-            <section id="experience" class="anchor">
-                <h1 class="uniwidth">Experience</h1>
-                <aside class="quote uniwidth">
+                <div class="about-text">
+                    <h3>About Me</h3>
                     <p>
-                        "Can everyone see my screen?"<br />- A random guy from Teams meeting
+                        Hi there! I consider myself a life enthusiast and a
+                        lifetime learner. I studied economics, but my career
+                        is increasingly being shifted towards IT,
+                        automation, web development and data analysis. And I
+                        am glad it is. I love to be on track with modern
+                        technologies and learning how to automate stuff that
+                        can be automated. I appreciate genuine relationships
+                        and honest intentions. Besides my passion for new
+                        technologies I love nature, sport, family, books,
+                        good people, intelligent humour and more! In case
+                        you would like to know more, feel free to contact
+                        me.
                     </p>
-                    <hr class="short" />
-                </aside>
-                <h2 class="uniwidth short">~ WORK EXPERIENCE ~</h2>
-
-                <!-- individual jobs description -->
-                <div class="job-container uniwidth">
-                    <h3 class="employer">Packeta Group</h3>
-                    <div class="job-content">
-                        <h3>
-                            Role:
-                            <span class="normal"
-                                >Business Intelligence Analyst</span
-                            >
-                        </h3>
-                        <h4>
-                            Period: <span class="normal">2021 - present</span>
-                        </h4>
-                        <h4>
-                            Location:
-                            <span class="normal">Prague, Czech Republic</span>
-                        </h4>
-                        <p>
-                            Member of the financial controlling team. The main responsibility is to deliver comprehensive business and financial
-                            information to management and other partners, so that the financial life cycle of a company could be well managed.
-                        </p>
-                        <ul>
-                            <li>Data mining (SQL, MariaDB, MS SQL Server, MS Access)</li>
-                            <li>Data transformation and modelling (Excel, Power Query, Power Pivot)</li>
-                            <li>Data reporting (Power BI)</li>
-                            <li>Data consolidation and analysis (creating budgeting templates, ad-hoc analysis, etc.)</li>
-                            <li>Automation (VBA)</li>
-                        </ul>
-                        <a href="https://www.packeta.com/" target="_blank"
-                            >https://www.packeta.com/</a
-                        >
-                    </div>
                 </div>
 
-                <div class="job-container uniwidth">
-                    <h3 class="employer">Vodafone Czech Republic</h3>
-                    <div class="job-content">
-                        <h3>
-                            Role:
-                            <span class="normal">Finance Business Partner</span>
-                        </h3>
-                        <h4>Period: <span class="normal">2018 - 2020</span></h4>
-                        <h4>
-                            Location:
-                            <span class="normal">Prague, Czech Republic</span>
-                        </h4>
-                        <p>
-                            Finance business partner for the System Development department. Day to day agenda was to provide support, analysis, and
-                            assistance in decision making processes. Essential competences were also budget planning activities, creating business
-                            cases, and reconciling CAPEX and OPEX results. I led several saving initiatives and projects, and, at the beginning of
-                            2020, I was nominated to VF talent program (VF stars).
-                        </p>
-                        <a href="https://www.vodafone.cz/" target="_blank"
-                            >https://www.vodafone.cz/</a
-                        >
-                    </div>
-                </div>
-
-                <div class="job-container uniwidth">
-                    <h3 class="employer">Alpiq Energy</h3>
-                    <div class="job-content">
-                        <h3>
-                            Role: <span class="normal">Portfolio Analyst</span>
-                        </h3>
-                        <h4>Period: <span class="normal">2016 - 2018</span></h4>
-                        <h4>
-                            Location:
-                            <span class="normal">Prague, Czech Republic</span>
-                        </h4>
-                        <p>
-                            Data processing and modeling, continuous checking
-                            data system integrity, reporting (M2M results,
-                            positions, etc).
-                        </p>
-                        <a href="https://www.alpiq.cz/" target="_blank"
-                            >https://www.alpiq.cz/</a
-                        >
-                    </div>
-                </div>
-
-                <div class="job-container uniwidth">
-                    <h3 class="employer">Česká spořitelna</h3>
-                    <div class="job-content">
-                        <h3>
-                            Role:
-                            <span class="normal"
-                                >Financial Markets Specialist</span
-                            >
-                        </h3>
-                        <h4>Period: <span class="normal">2015 - 2016</span></h4>
-                        <h4>
-                            Location:
-                            <span class="normal">Prague, Czech Republic</span>
-                        </h4>
-                        <p>
-                            Monitoring activities of investment funds, net asset
-                            value calculation, investment limits controlling,
-                            etc.
-                        </p>
-                        <a
-                            href="https://www.csas.cz/cs/osobni-finance"
-                            target="_blank"
-                            >https://www.csas.cz/cs/osobni-finance</a
-                        >
-                    </div>
-                </div>
-                <hr class="uniwidth" />
-
-                <!-- EDUCATION part of EXPERIENCE -->
-
-                <h2 class="uniwidth">~ EDUCATION ~</h2>
-
-                <div class="school uniwidth">
-                    <h3>
-                        Prague University of Economics and Business |
-                        <span class="normal">2011 - 2017</span>
-                    </h3>
-                    <h4><span class="normal">Prague, Czech Republic</span></h4>
+                <div class="about-text">
+                    <h3>About this website</h3>
                     <p>
-                        My main field of study was "Corporate Economics and
-                        Management". On top of that, during my master studies, I
-                        had chosen "Monetary Economics and Banking" as my minor
-                        specialization. On the 1st of Feb 2017, I defended my
-                        thesis "Valuation of ČEZ, a.s." and achieved Master's
-                        degree.
-                    </p>
-                    <a href="https://www.vse.cz/" target="_blank"
-                        >https://www.vse.cz/</a
-                    >
-                </div>
-
-                <div class="school uniwidth">
-                    <h3>
-                        Grammar School of Pavol Horov |
-                        <span class="normal">2007 - 2011</span>
-                    </h3>
-                    <h4><span class="normal">Michalovce, Slovakia</span></h4>
-                    <p>
-                        Due to fact that I had been actively playing handball, I
-                        attended sport class in grammar school. I took my final
-                        exams from: Mathematics, English, Economics and Slovak
-                        language.
-                    </p>
-                    <a href="https://www.gphmi.sk/" target="_blank"
-                        >https://www.gphmi.sk/</a
-                    >
-                </div>
-
-                <div class="school uniwidth">
-                    <h3>
-                        CodeCademy, Udemy, FreeCodeCamp |
-                        <span class="normal">ongoing</span>
-                    </h3>
-                    <h4><span class="normal">online</span></h4>
-                    <p>
-                        I love learning new things and that's the reason why I
-                        started taking coding courses on CodeCademy platform.
-                        Besides CodeCademy.com I'm also learning from other
-                        platforms as well. As for some great sources I will
-                        mention
-                        <a href="https://www.freecodecamp.org/" target="_blank"
-                            >freeCodeCamp.org</a
-                        >,
-                        <a href="https://www.w3schools.com/" target="_blank"
-                            >w3school</a
-                        >, mulitple youtube channels and of course official
-                        websites with documentation for specific languages /
-                        frameworks / libraries.
-                    </p>
-                    <p class="wrk-details">
-                        Most of my projects can be found in my GitHub account
-                        (<a href="https://github.com/subakmil" target="_blank"
-                            >subakmil</a
-                        >) - some of them are also listed here, in the "Skills"
-                        section.
+                        This website serves as my online resume and a practise for my web development skills. In case
+                        you
+                        would like to download it's PDF one-pager version,
+                        just click on the download button at the very top of
+                        the page (in navigation bar). Website is hosted on
+                        GitHub and source code can be found on my
+                        <a href="https://github.com/subakmil" target="_blank">GitHub profile</a>.
                     </p>
                 </div>
+            </div>
+        </section>
 
-                <hr class="uniwidth" />
-                <h2 class="uniwidth">~ CERTIFICATIONS ~</h2>
-
-                <div class="certificate uniwidth">
-                    <img
-                        src="./img/udemy.png"
-                        alt="Udemy"
-                    />
-                    <div>
-                        <h3>The Business Intelligence Analyst Course 2021</h3>
-                        <p>Udemy</p>
-                        <p>Issued Feb 2021</p>
-                        <p class="grey">
-                            Credential ID
-                            UC-b9749a4b-e3e0-4826-8d7b-6450bcb5312e
-                        </p>
-                    </div>
-                </div>
-
+        <!-- EXPERIENCE section -->
+        <section id="experience" class="anchor">
+            <h1 class="uniwidth">Experience</h1>
+            <aside class="quote uniwidth">
+                <p>
+                    "Can everyone see my screen?"<br />- A random guy from Teams meeting
+                </p>
                 <hr class="short" />
+            </aside>
+            <h2 class="uniwidth short">~ WORK EXPERIENCE ~</h2>
 
-                <aside class="quote uniwidth">
+            <!-- individual jobs description -->
+            <div class="job-container uniwidth">
+                <h3 class="employer">Packeta Group</h3>
+                <div class="job-content">
+                    <h3>
+                        Role:
+                        <span class="normal">Strategy Associate</span>
+                    </h3>
+                    <h4>
+                        Period: <span class="normal">2021 - present</span>
+                    </h4>
+                    <h4>
+                        Location:
+                        <span class="normal">Prague, Czech Republic</span>
+                    </h4>
                     <p>
-                        "Little progress every day adds up to big results."<br />-
-                        Satia Nani
+                        Member of the financial team (partially also IT). The main responsibility is to deliver
+                        comprehensive business and
+                        financial information to management, investors and other key stakeholders so that the financial
+                        life cycle of a company
+                        could be well managed. Other activies include:
                     </p>
-                </aside>
-            </section>
+                    <ul>
+                        <li>Developing and implementing guidelines for strategic price management</li>
+                        <li>Supporting development of group’s growth strategy and identifying new growth opportunities
+                        </li>
+                        <li>Creating and consolidation budget activities
+                        </li>
+                        <li>Providing various ad hoc analyses and simulations
+                        </li>
+                    </ul>
+                    <p>
+                        Mostly used technologies/tools:
 
-            <!-- SKILLS section -->
-            <section id="skills" class="anchor">
-                <h1 class="uniwidth">Skills & Strengths</h1>
-
-                <!-- skills -->
-                <h2 class="uniwidth">IT skills</h2>
-                <div class="uniwidth it-cont skills-margin">
-                    <figure>
-                        <img src="./img/skills-git.png" alt="git" />
-                        <figcaption>Git (version control system)</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="./img/github.png" alt="github" />
-                        <figcaption>GitHub</figcaption>
-                    </figure>
-                    <figure>
-                        <img
-                            src="./img/skills-front.jpg"
-                            alt="front-end technologies"
-                        />
-                        <figcaption>HTML, CSS, JavaScript</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="./img/skills-react.png" alt="react" />
-                        <figcaption>React - JS's library</figcaption>
-                    </figure>
+                    </p>
+                    <ul>
+                        <li>Data mining (SQL, MariaDB, MS SQL Server, MS Access)</li>
+                        <li>Data transformation and modelling (Excel, Power Query, Power Pivot, Dataflows, Python,
+                            Databricks)</li>
+                        <li>Data reporting (Power BI, Clevermaps)</li>
+                        <li>Data consolidation and analysis (creating budgeting templates, ad-hoc analysis, etc.)</li>
+                        <li>Automation (VBA)</li>
+                    </ul>
+                    <a href="https://www.packeta.com/" target="_blank">https://www.packeta.com/</a>
                 </div>
+            </div>
 
-                <h2 class="uniwidth skills-margin">Other IT skills</h2>
-                <p class="uniwidth">
-                    Python, VBA, SQL, Power BI, DAX, Power Query (M-Code),
-                    Tableau, MS Office apps, Git Bash, VS Code
+            <div class="job-container uniwidth">
+                <h3 class="employer">Vodafone Czech Republic</h3>
+                <div class="job-content">
+                    <h3>
+                        Role:
+                        <span class="normal">Finance Business Partner</span>
+                    </h3>
+                    <h4>Period: <span class="normal">2018 - 2020</span></h4>
+                    <h4>
+                        Location:
+                        <span class="normal">Prague, Czech Republic</span>
+                    </h4>
+                    <p>
+                        Finance business partner for the System Development department. Day to day agenda was to provide
+                        support, analysis, and
+                        assistance in decision making processes. Essential competences were also budget planning
+                        activities, creating business
+                        cases, and reconciling CAPEX and OPEX results. I led several saving initiatives and projects,
+                        and, at the beginning of
+                        2020, I was nominated to VF talent program (VF stars).
+                    </p>
+                    <a href="https://www.vodafone.cz/" target="_blank">https://www.vodafone.cz/</a>
+                </div>
+            </div>
+
+            <div class="job-container uniwidth">
+                <h3 class="employer">Alpiq Energy</h3>
+                <div class="job-content">
+                    <h3>
+                        Role: <span class="normal">Portfolio Analyst</span>
+                    </h3>
+                    <h4>Period: <span class="normal">2016 - 2018</span></h4>
+                    <h4>
+                        Location:
+                        <span class="normal">Prague, Czech Republic</span>
+                    </h4>
+                    <p>
+                        Data processing and modeling, continuous checking
+                        data system integrity, reporting (M2M results,
+                        positions, etc).
+                    </p>
+                    <a href="https://www.alpiq.cz/" target="_blank">https://www.alpiq.cz/</a>
+                </div>
+            </div>
+
+            <div class="job-container uniwidth">
+                <h3 class="employer">Česká spořitelna</h3>
+                <div class="job-content">
+                    <h3>
+                        Role:
+                        <span class="normal">Financial Markets Specialist</span>
+                    </h3>
+                    <h4>Period: <span class="normal">2015 - 2016</span></h4>
+                    <h4>
+                        Location:
+                        <span class="normal">Prague, Czech Republic</span>
+                    </h4>
+                    <p>
+                        Monitoring activities of investment funds, net asset
+                        value calculation, investment limits controlling,
+                        etc.
+                    </p>
+                    <a href="https://www.csas.cz/cs/osobni-finance"
+                        target="_blank">https://www.csas.cz/cs/osobni-finance</a>
+                </div>
+            </div>
+            <hr class="uniwidth" />
+
+            <!-- EDUCATION part of EXPERIENCE -->
+
+            <h2 class="uniwidth">~ EDUCATION ~</h2>
+
+            <div class="school uniwidth">
+                <h3>
+                    Prague University of Economics and Business |
+                    <span class="normal">2011 - 2017</span>
+                </h3>
+                <h4><span class="normal">Prague, Czech Republic</span></h4>
+                <p>
+                    My main field of study was "Corporate Economics and
+                    Management". On top of that, during my master studies, I
+                    had chosen "Monetary Economics and Banking" as my minor
+                    specialization. On the 1st of Feb 2017, I defended my
+                    thesis "Valuation of ČEZ, a.s." and achieved Master's
+                    degree.
                 </p>
+                <a href="https://www.vse.cz/" target="_blank">https://www.vse.cz/</a>
+            </div>
 
-                <h2 class="uniwidth skills-margin">Languages</h2>
-                <div class="uniwidth it-cont skills-margin lang">
-                    <figure>
-                        <img
-                            src="./img/united-kingdom-flag-icon-64.png"
-                            alt="UK flag"
-                            class="langu"
-                        />
-                        <figcaption>English</figcaption>
-                    </figure>
-                    <figure>
-                        <img
-                            src="./img/slovakia-flag-icon-64.png"
-                            alt="Slovakia flag"
-                            class="langu"
-                        />
-                        <figcaption>Slovak (native)</figcaption>
-                    </figure>
-                    <figure>
-                        <img
-                            src="./img/czech-republic-flag-icon-64.png"
-                            alt="Czech Republic flag"
-                            class="langu"
-                        />
-                        <figcaption>Czech</figcaption>
-                    </figure>
-                </div>
-
-                <h2 class="uniwidth skills-margin">React Projects</h2>
-                <div
-                    id="react-projects"
-                    class="uniwidth it-cont skills-margin proj-section"
-                ></div>
-
-                <hr class="short uniwidth" />
-                <h2 class="uniwidth per-char">~ PERSONAL CHARACTERICTICS ~</h2>
-                <div id="personal-char" class="uniwidth">
-                    <div id="strengths">
-                        <h2>Strengths</h2>
-                        <ul>
-                            <li>Systematical and Analytical thinking</li>
-                            <li>Responsibility</li>
-                            <li>Reliability</li>
-                            <li>Desire to learn new things</li>
-                            <li>Flexibility</li>
-                            <li>Empathy</li>
-                        </ul>
-                    </div>
-
-                    <div id="interests" class="uniwidth">
-                        <h2>Interests</h2>
-                        <ul>
-                            <li>Sport</li>
-                            <li>Nature</li>
-                            <li>Reading</li>
-                            <li>Personal Development</li>
-                            <li>Podcasts</li>
-                            <li>Family</li>
-                            <li>Coding</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <p class="uniwidth">
-                    According to CliftonStrengths Assessments (or more often
-                    recognized as StrengthsFinder) my TOP 5 strengths are
-                    following: connectedness, relator, learner, futuristic,
-                    intellection. Complete assessment of strengths and
-                    weaknesses can be found
-                    <a href="./files/Miloš Šubák CS34 CZ.pdf" target="_blank"
-                        >here</a
-                    >
-                    (assessment is in czech language).
+            <div class="school uniwidth">
+                <h3>
+                    Grammar School of Pavol Horov |
+                    <span class="normal">2007 - 2011</span>
+                </h3>
+                <h4><span class="normal">Michalovce, Slovakia</span></h4>
+                <p>
+                    Due to fact that I had been actively playing handball, I
+                    attended sport class in grammar school. I took my final
+                    exams from: Mathematics, English, Economics and Slovak
+                    language.
                 </p>
-            </section>
+                <a href="https://www.gphmi.sk/" target="_blank">https://www.gphmi.sk/</a>
+            </div>
 
-            <!-- CONTACT section -->
-            <section id="contact" class="anchor">
-                <h1 class="uniwidth">Contact</h1>
-                <p class="uniwidth">
-                    In case you would like to find out more, feel free to contact me.
-                </p>
+            <hr class="uniwidth" />
+            <h2 class="uniwidth">~ CERTIFICATIONS ~</h2>
 
-                <div class="uniwidth contact-con">
-                    <div class="contact-container uniwidth" id="first-contact">
-                        <img src="./img/email.png" alt="e-mail image" />
-                        <a href="mailto:subakmil@gmail.com" target="_blank"
-                            >subakmil@gmail.com</a
-                        >
-                    </div>
-
-                    <div class="contact-container uniwidth">
-                        <img src="./img/smartphone.png" alt="mobile image" />
-                        <a>+420 792 226 442</a>
-                    </div>
-
-                    <div class="contact-container uniwidth">
-                        <img src="./img/linkedin.png" alt="linkedin image" />
-                        <a
-                            href="https://www.linkedin.com/in/milossubak/"
-                            target="_blank"
-                            >https://www.linkedin.com/in/milossubak/</a
-                        >
-                    </div>
-
-                    <div class="contact-container uniwidth">
-                        <img src="./img/github.png" alt="github image" />
-                        <a href="https://github.com/subakmil" target="_blank"
-                            >https://github.com/subakmil</a
-                        >
-                    </div>
+            <div class="certificate uniwidth">
+                <img src="./img/udemy.png" alt="Udemy" />
+                <div>
+                    <h3>The Business Intelligence Analyst Course 2021</h3>
+                    <p>Udemy</p>
+                    <p>Issued Feb 2021</p>
+                    <p class="grey">
+                        Credential ID
+                        UC-b9749a4b-e3e0-4826-8d7b-6450bcb5312e
+                    </p>
                 </div>
-            </section>
-        </main>
-    </body>
+            </div>
+
+            <div class="certificate uniwidth">
+                <img src="./img/udemy.png" alt="Udemy" />
+                <div>
+                    <h3>Data Warehouse - The Ultimate Guide</h3>
+                    <p>Udemy</p>
+                    <p>Issued Oct 2022</p>
+                    <p class="grey">
+                        Credential ID
+                        UC-2615e4f9-d8a7-4356-a7f6-8cbe394d7ffd
+                    </p>
+                </div>
+            </div>
+
+            <div class="certificate uniwidth">
+                <img src="./img/gopas.jpeg" alt="Gopas" />
+                <div>
+                    <h3>Python - Data Analysis (PANDAS)</h3>
+                    <p>Gopas</p>
+                    <p>Issued Dec 2022</p>
+                    <p class="grey">
+                        Credential ID
+                        PYTHON_DATAN-20220100047
+                    </p>
+                </div>
+            </div>
+
+            <hr class="short" />
+
+            <aside class="quote uniwidth">
+                <p>
+                    "Little progress every day adds up to big results."<br />-
+                    Satia Nani
+                </p>
+            </aside>
+        </section>
+
+        <!-- SKILLS section -->
+        <section id="skills" class="anchor">
+            <h1 class="uniwidth">Skills & Strengths</h1>
+
+            <!-- skills -->
+            <h2 class="uniwidth">IT skills</h2>
+            <div class="uniwidth it-cont skills-margin">
+                <figure>
+                    <img src="./img/skills-git.png" alt="git" />
+                    <figcaption>Git (version control system)</figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/github.png" alt="github" />
+                    <figcaption>GitHub</figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/skills-front.jpg" alt="front-end technologies" />
+                    <figcaption>HTML, CSS, JavaScript</figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/skills-react.png" alt="react" />
+                    <figcaption>React - JS's library</figcaption>
+                </figure>
+            </div>
+
+            <h2 class="uniwidth skills-margin">Other IT skills</h2>
+            <p class="uniwidth">
+                Python, VBA, SQL, Power BI, DAX, Power Query (M-Code), Dataflows, Tableau, MS Office apps, Git Bash, VS
+                Code, Clevermaps
+            </p>
+
+            <h2 class="uniwidth skills-margin">Languages</h2>
+            <div class="uniwidth it-cont skills-margin lang">
+                <figure>
+                    <img src="./img/united-kingdom-flag-icon-64.png" alt="UK flag" class="langu" />
+                    <figcaption>English</figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/slovakia-flag-icon-64.png" alt="Slovakia flag" class="langu" />
+                    <figcaption>Slovak (native)</figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/czech-republic-flag-icon-64.png" alt="Czech Republic flag" class="langu" />
+                    <figcaption>Czech</figcaption>
+                </figure>
+            </div>
+
+            <h2 class="uniwidth skills-margin">React Projects</h2>
+            <div id="react-projects" class="uniwidth it-cont skills-margin proj-section"></div>
+
+            <hr class="short uniwidth" />
+            <h2 class="uniwidth per-char">~ PERSONAL CHARACTERICTICS ~</h2>
+            <div id="personal-char" class="uniwidth">
+                <div id="strengths">
+                    <h2>Strengths</h2>
+                    <ul>
+                        <li>Systematical and Analytical thinking</li>
+                        <li>Responsibility</li>
+                        <li>Reliability</li>
+                        <li>Desire to learn new things</li>
+                        <li>Flexibility</li>
+                        <li>Empathy</li>
+                    </ul>
+                </div>
+
+                <div id="interests" class="uniwidth">
+                    <h2>Interests</h2>
+                    <ul>
+                        <li>Sport</li>
+                        <li>Nature</li>
+                        <li>Reading</li>
+                        <li>Personal Development</li>
+                        <li>Podcasts</li>
+                        <li>Family</li>
+                        <li>Coding</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="uniwidth">
+                According to CliftonStrengths Assessments (or more often
+                recognized as StrengthsFinder) my TOP 5 strengths are
+                following: connectedness, relator, learner, futuristic,
+                intellection. Complete assessment of strengths and
+                weaknesses can be found
+                <a href="./files/Miloš Šubák CS34 CZ.pdf" target="_blank">here</a>
+                (assessment is in czech language).
+            </p>
+        </section>
+
+        <!-- CONTACT section -->
+        <section id="contact" class="anchor">
+            <h1 class="uniwidth">Contact</h1>
+            <p class="uniwidth">
+                In case you would like to find out more, feel free to contact me.
+            </p>
+
+            <div class="uniwidth contact-con">
+                <div class="contact-container uniwidth" id="first-contact">
+                    <img src="./img/email.png" alt="e-mail image" />
+                    <a href="mailto:subakmil@gmail.com" target="_blank">subakmil@gmail.com</a>
+                </div>
+
+                <div class="contact-container uniwidth">
+                    <img src="./img/smartphone.png" alt="mobile image" />
+                    <a>+420 792 226 442</a>
+                </div>
+
+                <div class="contact-container uniwidth">
+                    <img src="./img/linkedin.png" alt="linkedin image" />
+                    <a href="https://www.linkedin.com/in/milossubak/"
+                        target="_blank">https://www.linkedin.com/in/milossubak/</a>
+                </div>
+
+                <div class="contact-container uniwidth">
+                    <img src="./img/github.png" alt="github image" />
+                    <a href="https://github.com/subakmil" target="_blank">https://github.com/subakmil</a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
 </html>
